@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/bgr"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_face"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mb1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Bùi Quang Trường"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_face"
+        app:layout_constraintTop_toTopOf="@+id/bgr" />
+    <TextView
+        android:id="@+id/text_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14dp"
+        android:text="D19CQCN10-B"
+        app:layout_constraintStart_toEndOf="@+id/item_face"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+    <TextView
+        android:id="@+id/text_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="3dp"
+        android:textSize="13dp"
+        android:text="Sở Thích: Xem phim "
+        app:layout_constraintStart_toEndOf="@+id/item_face"
+        app:layout_constraintTop_toBottomOf="@+id/text_class" />
+    <TextView
+        android:id="@+id/text_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="3dp"
+        android:textSize="13dp"
+        android:text="Châm Ngôn Yêu Thích: Vận may và tình yêu dành cho người can đảm."
+        app:layout_constraintStart_toEndOf="@+id/item_face"
+        app:layout_constraintTop_toBottomOf="@+id/text_like" />
+
+</android.support.constraint.ConstraintLayout>
